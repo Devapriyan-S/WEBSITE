@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            height: 100;
+            width: 100vw;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+             background: #649173;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+  1.5px 1.1px 1.6px rgba(0, 0, 0, 0.014),
+  3.4px 2.6px 3.6px rgba(0, 0, 0, 0.024),
+  6.1px 4.6px 6.5px rgba(0, 0, 0, 0.033),
+  10.1px 7.7px 10.8px rgba(0, 0, 0, 0.041),
+  16.7px 12.7px 17.7px rgba(0, 0, 0, 0.051),
+  29.1px 22.2px 31px rgba(0, 0, 0, 0.064),
+  63px 48px 67px rgba(0, 0, 0, 0.09)
+        }
+
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 20rem;
+            /* background-color: aquamarine; */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section-title {
+            /* height: 10%; */
+            color: #649173;
+            font-weight: bold;
+           
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+
+        .companies {
+            font-weight: bold;
+
+
+            color: #649173;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&s" alt="" class="profile-img">
+        </div>         
+        <div class="profile-data">
+            <h1>Devapriyan S</h1>
+            <h3>devapriyan1723@gmail.com</h3>
+        </div>
+    </div>
+    <div class="section2">
+        <h1 class="section-title">
+            Objective
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nam suscipit aperiam. Ipsam sit qui temporibus architecto, sint dolorum quisquam quod. Deserunt assumenda magnam et accusamus obcaecati ea. Reiciendis.
+        </p>
+    </div>
+    <div class="section3">
+        <h1 class="section-title">
+            Education
+        </h1>
+        <table class="ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>School1</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Higher Secondary</td>
+                <td>School2</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>Collage</td>
+                <td>50%</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="section4">
+        <h1 class="section-title">
+            Internship
+        </h1>
+        <p>
+
+            <span class="companies">
+                Lorem, ipsum.
+            </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vero, libero vitae quam molestiae voluptas possimus officiis maxime laudantium eum at amet voluptates perferendis?
+        </p>
+        <p>
+
+            <span class="companies">
+                Lorem, ipsum.
+            </span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur vero, libero vitae quam molestiae voluptas possimus officiis maxime laudantium eum at amet voluptates perferendis?
+        </p>
+            
+    </div>
+</body>
+</html>
