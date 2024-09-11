@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0px;
@@ -138,6 +139,86 @@ background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, F
 
             color: #649173;
         }
+        .skill{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        li{
+          margin-left: 20px;
+          padding: 5px;
+          
+        }
+
+        .btns{
+            background-color: #649173;
+            width: 75%;
+            height: 2rem;
+            margin-top: 20px;
+            /* color: black; */
+        }
+          .funs{
+            margin-top: 5px;
+            font-size: larger;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* padding-right: 20px; */
+          }
+          #ran{
+            background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0px 10px 50px 0px rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 30px;
+          }
+
+.group {
+  position: fixed;
+  top: 90%;
+  right: 5%;
+}
+
+button svg {
+  width: 2rem;
+}
+
+.hover-icon {
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.hover-icon:hover {
+  transform: scale(1.25);
+  stroke: #649173;
+}
+
+.tooltip {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #D1D5DB;
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.group:hover .tooltip {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+          
+
     </style>
 
 
@@ -208,5 +289,36 @@ background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, F
         </p>
             
     </div>
+
+    <div class="skill">
+        <h1 class="section-title">Skill Sets</h1>
+     
+        <ul>
+            <li>c#</li>
+            <li>.Net</li>
+            <li>Java</li>
+            <li>DBMS</li>
+            <li>Html , CSS , JS</li>
+        </ul>
+    </div>
+
+    <div class="btns">
+        <div class="funs">
+
+            <a href="tel:+919500436949"><i class="fa-solid fa-phone" style="color: black;" id="ran"></i></a>
+            <a href="http://"><i class="fa-brands fa-linkedin-in" style="color: black;" id="ran"></i></a>
+            <a href="mailto:"><i class="fa-solid fa-envelope" style="color: black;" id="ran"></i></a>
+        </div>
+    </div>
+
+      <div class="group relative">
+        <button>
+          <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="w-8 hover-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </button>
+        <span class="tooltip">for Projects</span>
+      </div>
+      
+
+
 </body>
 </html>
